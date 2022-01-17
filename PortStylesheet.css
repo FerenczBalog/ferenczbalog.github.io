@@ -63,17 +63,20 @@ h3 {
 }
 
 @media(max-width: 700px) {
+    html{
+        font-size: 8px;
+    }
+
     header{
         z-index: 3;
         height: 10rem;
-        padding: 0.75rem 2.5rem;
+        padding: 4rem 0.5rem;
+        font-size: 0;
     }
     .navigation > a {
         margin-bottom: 1rem;
     }
-        
 }
-
 /* HEADER */
 
 
@@ -104,7 +107,7 @@ h3 {
         width: calc(25% - 5rem);
     }
 
-@media(max-width:767px){
+@media(max-width:1023px){
 
     .box-third {
         width: calc(100% - 5rem);
@@ -168,10 +171,10 @@ h3 {
 
 
 
-@media(max-width: 767px) {
+@media(max-width: 1023px) {
     .section-block {
         height: auto;
-        padding: 5rem;
+        padding-top: 5rem;
     }
     .section-block.not-fullscreen {
         min-height: none;
@@ -294,17 +297,19 @@ h3 {
     .rec-section-box > img, .about-me-inner-container > img{
         width: 15rem;
         height: 14rem;
-        margin-top: 2rem;
-    }
-
-    .grid > .grid-box {
-        float: none;
-        margin: 1rem;
-        min-width: 30rem;
+        margin-top: 5rem;
     }
 
     .section-1-2 h2, .rec-section h2{
         padding-top: 3.5rem;
+    }
+}
+
+@media(max-width:400px) {
+    .grid > .grid-box {
+        float: center;
+        margin: 1rem;
+        min-width: 30rem;
     }
 }
 
@@ -328,16 +333,23 @@ h3 {
     }
     .about-me-inner-container > div {
         display: block;
+        padding-left: 2rem;
+        padding-bottom: 3rem;
     }
 
-@media(max-width:1000px){
-    .about-me-inner-container{
-        margin-top: 0rem;
+@media(max-width:1023px){
+    .about-me-inner-container {
+        margin-top:5rem;
+    }
+
+    .about-me-inner-container > div {
+        display: block;
+        padding-right: 2rem;
     }
 
     .about-me-inner-container > img {
-        margin-top: 4rem;
-        margin-bottom: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 10rem;
     }
 }
 
@@ -377,6 +389,17 @@ h3 {
     .e-mail {
         margin-bottom: 1rem;
     }
+
+@media(max-width:915px) {
+    .footer {
+        font-size: 7px;
+    }
+
+    .footer h3 {
+        font-size: 8px;
+    }
+}
+
 
 /* Footer */
 
